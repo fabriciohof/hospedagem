@@ -1,0 +1,387 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        
+    }
+
+    /* rolagem do navbar */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: lightslategray;
+    }
+
+    .interface{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .btn-contact button, .hero button{
+        font-size: 16px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 8px;
+        transition: .6s;
+    }
+
+    /* Header */
+
+    header {
+        width: 100%;
+        padding: 30px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 1.5s;
+    }
+
+    header .interface{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* rolagem do menu via js */
+    header.rolagem{
+        background-color: white;
+        padding: 20px 0;
+    }
+
+    header.rolagem .menu nav a, header.rolagem .logo{
+        color: lightcoral;
+    }
+
+    .logo   {
+        color: white;
+        font-size: 40px;
+    }
+
+    .menu nav ul {
+        list-style-type: none;
+    }
+
+    .menu nav li {
+        display: inline-block;
+        margin: 0 70px; 
+        font-weight: 600;
+
+    }
+
+    .menu nav a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        transition: .2s;
+    }
+
+    .menu nav a:hover {
+        transform: scale(1.05);
+        color: gold
+    }
+
+    .btn-contact button {
+        width: 120px;
+        height: 40px;
+        color: lightcoral;
+
+    }
+
+    .btn-contact button:hover {
+        cursor: pointer;
+        background-color: gold;
+        color: black;
+    }
+
+    /* Hero */
+
+    .hero {
+        height: 100vh;
+        background-image: url(../img/mountain.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero .interface {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .hero-txt h1 {
+        color: white;
+        font-size: 4em;
+        line-height: 80px;
+        font-weight: 400;
+    }
+
+    .hero-txt span {
+        display: block;
+        font-weight: 600;
+    }
+
+    .hero-txt p {
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero button {
+        width: 200px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .hero button:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    /* Advantages */
+
+    .advantages {
+        padding: 80px 0;
+
+    }
+
+    .container-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10%;
+        margin-bottom: 50px;
+    }
+
+    .img-items img{
+        max-width: 480px;
+
+    }
+
+    #chaletnone {
+        display: none;
+    }
+
+    .txt-items h3{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .txt-items p {
+        color: whitesmoke;
+
+    }
+
+    /* location */
+
+    .location {
+        background-color: white;
+        padding-top: 50px;
+    }
+
+    .location-map {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;  
+    }
+
+    /* Contact */
+
+    .contact {
+        background-color: white;
+        padding: 60px 0;
+
+    }
+
+
+    .contact-icons, .contact-txt {
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        /* vertical-align: middle; */
+    
+    }
+
+
+    .contact-txt h3{
+        font-size: 2em;
+        font-weight: 400;
+        margin-bottom: 20px;
+    
+    }
+
+    .contact-txt span {
+        display: block;
+        font-weight: 700;
+    }
+
+
+
+    .contact-icons a {
+        text-decoration: none;
+
+    }
+
+    .contact-icons button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 50%;
+        height: 60px;
+        margin: 0 auto 10px auto;
+        padding: 0 60px;
+
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .contact-icons button:hover {
+        background-color: black;
+
+
+    }
+
+    .contact-icons i {
+        font-size: 20px;
+    }
+
+    .contact-icons button:hover i, .contact-icons button:hover p {
+        color: white;
+    }
+
+    /* Feedback */
+
+    .feedback{
+        background-color: white;
+        width: 100%;
+        padding: 50px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .feedback-txt {
+        margin-bottom: 40px;
+
+    }
+
+    .slider {
+        padding: 30px 90px;
+        cursor: grab;
+    }
+
+    .slider:active {
+        cursor: grabbing;
+
+    }
+
+    .slider i {
+        font-size: 80px;
+        color: gray;
+    }
+
+    .person{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+
+    }
+
+    .person img{
+        width: 140px;
+        height: 80px;
+
+    }
+
+    .person-name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .person-date {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .person-date span {
+        font-weight: 300;
+    }
+
+
+    /* Footer */
+    footer {
+        background-color: #333; 
+        color: #fff; 
+        padding: 10px;
+        text-align: center; 
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column; 
+        margin: 0 auto; 
+        align-items: center;
+    }
+
+    .footer-content h3 {
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-content span:hover {
+        color: coral; 
+        cursor: pointer;
+    }
+
+    .support {
+        display: flex;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .support a {
+        color: white;
+    }
+
+    .support a:hover{
+        color: royalblue;
+    }
+
+
+    .social-media a {
+        color: #fff; 
+        font-size: 20px; 
+        margin: 0 10px; 
+        transition: color 0.3s ease; 
+        }
+
+    .social-media a:hover {
+        color: coral; 
+    }
+
+    .copy-underline {
+        border-bottom: 1px solid #fff; 
+        margin-top: 5px;
+    }
+
+    .copyright i {
+        font-size: 12px;
+        
+    }
+
+    .copyright p {
+        display: inline-block;
+        padding-bottom: 10px; 
+        margin-top: 10px; 
+    }

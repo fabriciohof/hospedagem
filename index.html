@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Biblioteca Swiperjs  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <title>Website</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="interface">
+
+            <section class="logo">
+                <i class="bi bi-house-heart-fill"></i>
+            </section>
+
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#initial">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#schedule">Agendamento</a></li>
+                        <li><a href="#feedbacks">Feedbacks</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="btn-contact">
+                <a href="#schedule">
+                    <button>Contato</button>
+                </a>
+            </section>
+
+        </div>
+    </header>
+
+    <section class="hero" id="initial">
+        <div class="interface">
+
+            <div class="hero-txt">
+                <h1>Venha se aventurar <span>pelas montanhas</span></h1>
+                <p>Um destino para ficar na memória para sempre!</p>
+
+                <a href="#map">
+                    <button>Quero conhecer</button>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+
+    <section class="advantages" id="about">
+        <div class="interface">
+
+            <article class="container-items">
+                <div class="txt-items">
+                    <h3>Aventure-se</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed assumenda tempore nemo placeat ea consectetur eligendi eveniet harum illum.</p>
+                </div>
+
+                <div class="img-items">
+                    <img src="img/chalemontanha.png" alt="chalet">
+                </div>
+
+            </article>
+
+            <article class="container-items">
+
+                <div class="img-items" >
+                    <img id="chalet" src="img/chale.png" alt="chalet">
+                </div>
+
+                <div class="txt-items">
+                    <h3>Aconchegante</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed assumenda tempore nemo placeat ea consectetur eligendi eveniet harum illum.</p>
+                </div>
+
+                <img id="chaletnone" src="img/chale.png" alt="chalet">                
+
+            </article>
+
+            <article class="container-items">
+                <div class="txt-items">
+                    <h3>Chalé mais indicado</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sed assumenda tempore nemo placeat ea consectetur eligendi eveniet harum illum.</p>
+                </div>
+
+                <div class="img-items">
+                    <img src="img/chalepicture.png" alt="chalet">
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="location" id="map">
+        <div class="location-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10973.488591564414!2d8.5610781!3d46.56010555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478576eb2f97f733%3A0x41140a31bc0c273!2zQWxwZXMgc3XDrcOnb3M!5e0!3m2!1spt-BR!2sbr!4v1720045560954!5m2!1spt-BR!2sbr" width="1400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </section>
+
+    <section class="contact" id="schedule">
+        <div class="interface">
+
+            <article class="contact-txt">
+                <h3>Contate-nos para <span>agendamento</span></h3>
+                <p>Aberto de segunda à sabádo <br> Funcionamento entre 8:00h até 22:00h</p>
+            </article>
+
+            <article class="contact-icons">
+                
+                <button onclick="redirectToWhatsApp()">
+                    <i class="bi bi-whatsapp"></i>
+                    <p>Chame no WhatsApp</p>
+                </button>
+                
+                <button onclick="sendEmail()">
+                    <i class="bi bi-envelope-at"></i>
+                    <p>Mande um e-mail</p>
+                </button>
+                
+                <button onclick="callPhone()">
+                    <i class="bi bi-telephone"></i>
+                    <p>Ligue por telefone</p>
+                </button>
+                
+                <button onclick="redirectToForm()">
+                    <i class="bi bi-ui-checks"></i>
+                    <p>Formulário</p>
+                </button>                
+
+            </article>
+
+        </div>
+    </section>
+
+    <section class="feedback mySwiper" id="feedbacks">
+        <div class="interface swiper-wrapper">
+
+            <div class="slider swiper-slide">
+                <i class="bi bi-quote"></i>
+                <p class="feedback-txt">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam praesentium, at corporis repellendus non maxime minus voluptatibus et. Rerum, dolorem?
+                </p>
+
+                <div class="person">
+                    <img src="img/woman.png" alt="woman">
+                    <div class="person-info">
+                        <p class="person-name"> Julia Oliveira</p>
+                        <p class="person-date"><span>Hospedagem:</span> 10/03/2024 - 12/03/2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider swiper-slide">
+                <i class="bi bi-quote"></i>
+                <p class="feedback-txt">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam praesentium, at corporis repellendus non maxime minus voluptatibus et. Rerum, dolorem?
+                </p>
+
+                <div class="person">
+                    <img src="img/woman2.png" alt="woman">
+                    <div class="person-info">
+                        <p class="person-name"> Amanda F.</p>
+                        <p class="person-date"><span>Hospedagem:</span> 20/04/2024 - 26/04/2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider swiper-slide">
+                <i class="bi bi-quote"></i>
+                <p class="feedback-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque enim aut fugiat. Voluptatibus, maiores amet assumenda nobis animi aut qui quae sapiente pariatur unde corporis fugit. Beatae, eligendi, consequatur, quis tenetur error accusamus odio neque vero laudantium quasi amet natus! Voluptas recusandae esse hic similique distinctio labore quibusdam quas eligendi.
+                </p>
+
+                <div class="person">
+                    <img src="img/man.png" alt="man">
+                    <div class="person-info">
+                        <p class="person-name"> Robert Patt</p>
+                        <p class="person-date"><span>Hospedagem:</span> 24/01/2024 - 27/01/2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </section>
+
+    </main>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <h3>Desenvolvido por <span>Fabrício Formentini</span></h3> 
+            <div class="social-media">
+                <a href="https://www.instagram.com/formentinii/?hl=pt-br" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fformentini/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                
+            </div>  
+        </div>
+        <div class="support">
+            <a href="#"><p>Suporte</p></a>
+            <a href="#"><p>Informações</p></a>
+            <a href="#"><p>Marketing</p></a>
+
+        </div>
+        <div class="copy-underline"></div>
+        <div class="copyright">
+            <i class="bi bi-c-circle"></i>
+            <p>Copyright | Todos os direitos reservados</p>
+        </div>
+</footer>  
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
